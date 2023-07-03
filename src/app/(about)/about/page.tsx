@@ -6,6 +6,10 @@ import Link from "next/link";
 
 type Props = {};
 
+export const metadata = {
+  title: "About - Animal Haven",
+};
+
 const About = (props: Props) => {
   return (
     <section className="my-10 flex flex-col justify-center items-center px-10">

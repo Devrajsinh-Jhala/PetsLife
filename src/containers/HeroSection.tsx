@@ -14,14 +14,17 @@ const HeroSection = (props: Props) => {
           <p>Welcome to Animal Haven!</p>
         </div>
         <p className="max-w-[500px] mt-2 mb-6">
-          Get the best resources quickly to learn about pet training and other
-          nuances of owning your next companion. We sell affordable courses to
-          help you get started with areas such as pet training, pet grooming and
-          general care.
+          One-stop destination for animal lovers. Explore our courses, delve
+          into captivating blogs, and join our vibrant community. Expand your
+          knowledge, connect with like-minded individuals, and make a positive
+          impact on the lives of animals. Join us today and be a part of the
+          change.
         </p>
-        <Button variant={"default"} size={"lg"}>
-          <Link href={"/products"}>Explore Products</Link>
-        </Button>
+        <Link href={"/about"}>
+          <Button variant={"default"} size={"lg"}>
+            Know about us
+          </Button>
+        </Link>
       </div>
       <div className="relative h-[420px] w-[420px]">
         <Image priority fill src={heroImage.src} alt="Hero Image" />
