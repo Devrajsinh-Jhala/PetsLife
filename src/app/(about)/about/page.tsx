@@ -7,7 +7,7 @@ import Link from "next/link";
 type Props = {};
 
 export const metadata = {
-  title: "About - Animal Haven",
+  title: "About | Animal Haven",
 };
 
 const About = (props: Props) => {
@@ -50,7 +50,7 @@ const About = (props: Props) => {
             </Link>
           </span>{" "}
           and this platform where people can get guidance and learn more about
-          various topics on thier pets.
+          various topics on their pets.
         </p>
       </div>
 

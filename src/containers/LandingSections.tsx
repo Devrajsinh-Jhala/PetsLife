@@ -1,10 +1,7 @@
 import React from "react";
 import hero2 from "../../public/assets/hero2.png";
-
 import hero4 from "../../public/assets/hero4.png";
-
 import hero6 from "../../public/assets/hero6.png";
-
 import hero8 from "../../public/assets/hero8.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
@@ -61,7 +58,7 @@ const LandingSections = (props: Props) => {
         </div>
         <div className="flex flex-col items-start">
           <div className=" font-bold text-4xl">
-            <p>Happy Prices, Happy Pockets</p>
+            <p>Fair Prices, Happy Pockets</p>
           </div>
           <p className="max-w-[500px] mt-2 mb-6">
             We know the value of money and hence we strive for quality courses

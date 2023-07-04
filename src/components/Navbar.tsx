@@ -35,15 +35,14 @@ const Navbar: FC = () => {
           >
             <li>Community</li>
           </Link>
-          <li>
-            <Button variant={"default"} size={"sm"}>
-              Login
-            </Button>
-          </li>
-          <li>
-            <ModeToggle />
-          </li>
         </ul>
+      </div>
+      <div className="flex items-center gap-3">
+        <Button variant={"default"} size={"sm"}>
+          Login
+        </Button>
+
+        <ModeToggle />
       </div>
     </nav>
   );
