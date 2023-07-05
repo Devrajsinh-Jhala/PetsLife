@@ -23,7 +23,10 @@ const Navbar: FC = () => {
           <Link href={"/about"}>
             <li>About</li>
           </Link>
-          <li>Blog</li>
+          <Link href={"/blog"}>
+            <li>Blog</li>
+          </Link>
+
           <li>Products</li>
           <Link href={"/pricing"}>
             <li>Pricing</li>
