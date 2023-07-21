@@ -6,13 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
 
 export const metadata = {
   title: "Pricing | Animal Haven",
+  description:
+    "This is the pricing page of Animal Haven application. You can view the nominal price along with great perks offered in exchange for it.",
 };
 
 type Props = {};
@@ -35,14 +34,14 @@ const Pricing = (props: Props) => {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-center">
-                  <p className="my-10 text-5xl font-bold">₹50</p>
+                <div className="flex my-10 items-center justify-center">
+                  <p className="text-5xl font-bold">₹50</p>
                 </div>
 
                 <form action={"/api/checkout"} method="POST">
                   <Button
                     type="submit"
-                    className="w-full mt-5"
+                    className="w-full "
                     variant={"default"}
                     size={"lg"}
                   >

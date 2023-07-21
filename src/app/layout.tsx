@@ -24,7 +24,7 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body className={inter.className}>
           <ThemeProvider attribute="class" defaultTheme="system">
-            <div className="max-w-[1120px] scrollbar-hide w-screen h-screen overflow-x-hidden mx-auto">
+            <div className="max-w-[1120px] selection:bg-[#eea727] scrollbar-hide w-screen h-screen overflow-x-hidden mx-auto">
               <Navbar />
               {children}
               <Toaster />

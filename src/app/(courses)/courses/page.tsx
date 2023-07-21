@@ -9,6 +9,8 @@ import { redirect } from "next/navigation";
 type Props = {};
 export const metadata = {
   title: "Courses | Animal Haven",
+  description:
+    "Explore plethora of courses specifically designed to make you well equipped with the knowledge that will make your journey with your pet much smoother and happier.",
 };
 const allPostsQuery = groq`
 *[_type == 'course']{

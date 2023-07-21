@@ -6,10 +6,10 @@ import { ModeToggle } from "./ToggleDarkMode";
 import Link from "next/link";
 
 import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
+import { Button } from "./ui/Button";
 
 const Navbar: FC = () => {
   const { user } = useUser();
-  console.log(user?.emailAddresses[0].emailAddress);
 
   return (
     <nav className="w-full my-5 flex items-center px-5 justify-between">
@@ -53,7 +53,11 @@ const Navbar: FC = () => {
             <UserButton />
           </div>
         ) : (
-          <SignInButton />
+          <SignInButton mode="modal">
+            <Button variant={"default"} size={"sm"}>
+              Login
+            </Button>
+          </SignInButton>
         )}
 
         <ModeToggle />

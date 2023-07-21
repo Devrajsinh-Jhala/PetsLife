@@ -4,12 +4,30 @@ import Image from "next/image";
 import urlFor, { sanityClient } from "../../../../../sanity";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/components/RichTextComponents";
+import { Metadata } from "next/types";
 
 type Props = {
   params: {
     slug: string;
   };
 };
+
+// Dynamic Metadata
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.slug;
+  const query = groq`
+  *[_type == "post" && slug.current == $slug][0]{
+    title,
+    description
+  }
+  `;
+  const metadata = await sanityClient.fetch(query, { slug });
+
+  return {
+    title: metadata.title + " | Animal Haven",
+    description: metadata.description,
+  };
+}
 
 // revalidate after one day
 export const revalidate = 86400;

@@ -8,6 +8,8 @@ type Props = {};
 
 export const metadata = {
   title: "About | Animal Haven",
+  description:
+    "This is the about section of Animal Haven where you can get information on how this project was started and about its builder XD.",
 };
 
 const About = (props: Props) => {
