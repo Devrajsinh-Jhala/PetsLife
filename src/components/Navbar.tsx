@@ -1,11 +1,16 @@
+"use client";
 import Image from "next/image";
 import { FC } from "react";
 import logo from "../../public/assets/logo.png";
 import { ModeToggle } from "./ToggleDarkMode";
 import Link from "next/link";
-import { Button } from "./ui/Button";
+
+import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
 
 const Navbar: FC = () => {
+  const { user } = useUser();
+  console.log(user?.emailAddresses[0].emailAddress);
+
   return (
     <nav className="w-full my-5 flex items-center px-5 justify-between">
       {/* Logo */}
@@ -43,9 +48,13 @@ const Navbar: FC = () => {
         </ul>
       </div>
       <div className="flex items-center gap-3">
-        <Button variant={"default"} size={"sm"}>
-          Login
-        </Button>
+        {user ? (
+          <div>
+            <UserButton />
+          </div>
+        ) : (
+          <SignInButton />
+        )}
 
         <ModeToggle />
       </div>

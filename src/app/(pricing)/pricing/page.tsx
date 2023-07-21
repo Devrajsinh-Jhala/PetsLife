@@ -9,6 +9,7 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 export const metadata = {
   title: "Pricing | Animal Haven",
@@ -35,20 +36,19 @@ const Pricing = (props: Props) => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <p className="my-10 text-5xl font-bold">₹99.99</p>
+                  <p className="my-10 text-5xl font-bold">₹50</p>
                 </div>
 
-                <div className="flex items-center justify-center">
-                  <div className="flex items-center text-lg space-x-2">
-                    <Label htmlFor="price">Montly</Label>
-                    <Switch id="price" />
-                    <Label htmlFor="price">Yearly</Label>
-                  </div>
-                </div>
-
-                <Button className="w-full mt-5" variant={"default"} size={"lg"}>
-                  Purchase Plan
-                </Button>
+                <form action={"/api/checkout"} method="POST">
+                  <Button
+                    type="submit"
+                    className="w-full mt-5"
+                    variant={"default"}
+                    size={"lg"}
+                  >
+                    Purchase Plan
+                  </Button>
+                </form>
               </div>
             </div>
 

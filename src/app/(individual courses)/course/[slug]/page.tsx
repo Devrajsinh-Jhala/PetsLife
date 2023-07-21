@@ -14,7 +14,7 @@ type Props = {
 // revalidate after one day
 export const revalidate = 86400;
 // In development mode, please uncomment the following line else it will throw an error
-// export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 export async function generateStaticParams() {
   const query = groq`*[_type == 'course']{
     slug

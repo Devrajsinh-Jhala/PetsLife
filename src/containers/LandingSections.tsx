@@ -45,7 +45,11 @@ const LandingSections = (props: Props) => {
             handling and care. Our courses are well tested and can help you
             learn about nuances of pet training faster and easier. We also
             provide courses on pet grooming, pet care and on other critical
-            areas.
+            areas.{" "}
+            <b>
+              Make sure to upgrade to the Pro Plan to access our courses. Visit
+              Pricing page for more details.
+            </b>
           </p>
           <Button variant={"default"} size={"lg"}>
             <Link href={"/courses"}>Explore Courses</Link>

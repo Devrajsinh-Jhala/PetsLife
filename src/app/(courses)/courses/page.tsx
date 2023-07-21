@@ -1,12 +1,14 @@
 import { groq } from "next-sanity";
 import React from "react";
 import { sanityClient } from "../../../../sanity";
-import BlogPostComponent from "@/components/BlogPostComponent";
 import CoursePostComponent from "@/components/CoursePostComponent";
+import { currentUser } from "@clerk/nextjs";
+import { prisma } from "@/lib/prisma";
+import { redirect } from "next/navigation";
 
 type Props = {};
 export const metadata = {
-  title: "Blog | Animal Haven",
+  title: "Courses | Animal Haven",
 };
 const allPostsQuery = groq`
 *[_type == 'course']{
@@ -17,6 +19,20 @@ const allPostsQuery = groq`
 `;
 
 const Blogs = async (props: Props) => {
+  const data = await currentUser();
+  const userEmail = data?.emailAddresses[0].emailAddress; // jhaladevrajsinh11@gmail.com
+
+  const user = await prisma.user.findUnique({
+    where: {
+      email: userEmail,
+    },
+  });
+
+  // console.log(user);
+  if (!user) {
+    redirect("/");
+  }
+
   const allPosts = await sanityClient.fetch(allPostsQuery);
   return (
     <section className="my-10 px-10">
