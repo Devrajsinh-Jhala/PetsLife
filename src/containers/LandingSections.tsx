@@ -48,7 +48,7 @@ const LandingSections = (props: Props) => {
             areas.
           </p>
           <Button variant={"default"} size={"lg"}>
-            <Link href={"/products"}>Explore Products</Link>
+            <Link href={"/courses"}>Explore Courses</Link>
           </Button>
         </div>
       </section>

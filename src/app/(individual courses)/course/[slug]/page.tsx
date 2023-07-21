@@ -16,7 +16,7 @@ export const revalidate = 86400;
 // In development mode, please uncomment the following line else it will throw an error
 // export const dynamic = "force-static";
 export async function generateStaticParams() {
-  const query = groq`*[_type == 'post']{
+  const query = groq`*[_type == 'course']{
     slug
 }`;
 
@@ -31,7 +31,7 @@ export async function generateStaticParams() {
 
 async function Post({ params: { slug } }: Props) {
   const query = groq`
-   *[_type=="post" && slug.current == $slug][0]{
+   *[_type=="course" && slug.current == $slug][0]{
 
 author->{
 name,

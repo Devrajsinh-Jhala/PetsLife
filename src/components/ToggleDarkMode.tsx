@@ -15,6 +15,15 @@ import {
 export function ModeToggle() {
   const { setTheme } = useTheme();
   const [isDarkMode, setIsDarkMode] = React.useState(false);
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -27,7 +36,7 @@ export function ModeToggle() {
 
   return (
     <Button onClick={() => toggleTheme()} variant={"outline"} size={"icon"}>
-      {isDarkMode === true ? <Sun /> : <Moon />}
+      {isDarkMode === true ? <Moon /> : <Sun />}
     </Button>
   );
 }

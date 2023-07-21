@@ -8,13 +8,16 @@ type Props = {
   posts: Post[];
 };
 
-const BlogPostComponent = ({ posts }: Props) => {
+const CoursePostComponent = ({ posts }: Props) => {
   return (
     <section className="">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 pb-24">
         {/* Posts */}
         {posts.map((post) => (
-          <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
+          <ClientSideRoute
+            key={post._id}
+            route={`/course/${post.slug.current}`}
+          >
             <div className="flex flex-col border border-secondary p-2 rounded-lg cursor-pointer group">
               <div className="relative w-full z-[-10] h-52 drop-shadow-xl ">
                 <Image
@@ -62,4 +65,4 @@ const BlogPostComponent = ({ posts }: Props) => {
   );
 };
 
-export default BlogPostComponent;
+export default CoursePostComponent;

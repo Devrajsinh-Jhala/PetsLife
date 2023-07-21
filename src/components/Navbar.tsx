@@ -27,7 +27,9 @@ const Navbar: FC = () => {
             <li>Blog</li>
           </Link>
 
-          <li>Products</li>
+          <Link href={"/courses"}>
+            <li>Courses</li>
+          </Link>
           <Link href={"/pricing"}>
             <li>Pricing</li>
           </Link>
