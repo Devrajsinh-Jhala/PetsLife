@@ -39,12 +39,15 @@ const Blogs = async (props: Props) => {
   return (
     <section className="my-10 px-10">
       <div className="my-5">
-        <p className="text-4xl font-bold">Perfectly Curated Courses for you</p>
+        <p className="sm:text-4xl text-3xl font-bold">
+          Premium Courses to cater all your needs
+        </p>
         <p className="text-sm max-w-[750px] mt-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis rem
-          expedita voluptatibus hic ea enim. Quae fugit perferendis fuga
-          perspiciatis tempore aspernatur dolorem nam ipsa neque sit corporis ab
-          inventore porro dignissimos dolore
+          Our passion for pets drives us to provide top-notch training and care
+          courses for pet owners like you! Whether you&apos;re a first-time pet
+          parent or a seasoned enthusiast, our courses are designed to empower
+          you with the knowledge and skills needed to foster a strong and loving
+          bond with your furry companions.
         </p>
       </div>
       <CoursePostComponent posts={allPosts} />

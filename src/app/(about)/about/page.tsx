@@ -67,7 +67,9 @@ const About = (props: Props) => {
           />
         </div>
 
-        <p className="text-4xl mt-3 font-bold">Meet the builder... 👷‍♂️</p>
+        <p className="sm:text-4xl text-2xl text-center mt-3 font-bold">
+          Meet the builder... 👷‍♂️
+        </p>
 
         <p className="mt-5 text-center max-w-[900px]">
           Hello! Really appreciate your valuable time here. I am Devraj Jhala,

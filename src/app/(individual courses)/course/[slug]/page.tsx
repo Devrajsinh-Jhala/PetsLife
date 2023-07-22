@@ -47,7 +47,7 @@ export async function generateStaticParams() {
   }));
 }
 
-async function Post({ params: { slug } }: Props) {
+async function Course({ params: { slug } }: Props) {
   const query = groq`
    *[_type=="course" && slug.current == $slug][0]{
 
@@ -146,4 +146,4 @@ _updatedAt
   );
 }
 
-export default Post;
+export default Course;

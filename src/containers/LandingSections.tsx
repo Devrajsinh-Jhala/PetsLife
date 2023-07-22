@@ -12,15 +12,15 @@ type Props = {};
 const LandingSections = (props: Props) => {
   return (
     <section className="my-10 px-10 flex flex-col space-y-10">
-      <section className="flex items-center justify-between">
-        <div className="relative h-[420px] w-[420px]">
+      <section className="flex lg:flex-row flex-col items-center justify-center lg:justify-between">
+        <div className="relative h-[300px] w-[300px] sm:h-[420px] sm:w-[420px]">
           <Image src={hero2.src} alt="Hero section" fill />
         </div>
-        <div className="flex flex-col items-start">
-          <div className=" font-bold text-4xl">
+        <div className="flex flex-col items-center lg:items-start justify-center">
+          <div className=" font-bold text-3xl sm:text-4xl">
             <p>Explore the blog</p>
           </div>
-          <p className="max-w-[500px] mt-2 mb-6">
+          <p className="max-w-[500px] lg:text-left text-center mt-2 mb-6">
             We appriciate your valuable time and that&apos;s why we summarize
             from some of the best sources on Internet to bring you the best
             content possible so that you can get started quickly and
@@ -32,15 +32,15 @@ const LandingSections = (props: Props) => {
           </Button>
         </div>
       </section>
-      <section className="flex flex-row-reverse items-center justify-between">
-        <div className="relative h-[420px] w-[420px]">
+      <section className="flex lg:flex-row-reverse flex-col items-center justify-center lg:justify-between">
+        <div className="relative h-[300px] w-[300px] sm:h-[420px] sm:w-[420px]">
           <Image src={hero6.src} alt="Hero section" fill />
         </div>
-        <div className="flex flex-col items-start">
-          <div className=" font-bold text-4xl">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="lg:text-left text-center font-bold text-3xl sm:text-4xl">
             <p>Invest in the best!</p>
           </div>
-          <p className="max-w-[500px] mt-2 mb-6">
+          <p className="max-w-[500px] text-center lg:text-left mt-2 mb-6">
             Our courses are designed by people who are experienced in pet
             handling and care. Our courses are well tested and can help you
             learn about nuances of pet training faster and easier. We also
@@ -56,15 +56,15 @@ const LandingSections = (props: Props) => {
           </Button>
         </div>
       </section>
-      <section className="flex  items-center justify-between">
-        <div className="relative h-[420px] w-[420px]">
+      <section className="flex lg:flex-row flex-col items-center justify-between">
+        <div className="relative h-[300px] w-[300px] sm:h-[420px] sm:w-[420px]">
           <Image src={hero4.src} alt="Hero section" fill />
         </div>
-        <div className="flex flex-col items-start">
-          <div className=" font-bold text-4xl">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="lg:text-left text-center font-bold text-3xl sm:text-4xl">
             <p>Fair Prices, Happy Pockets</p>
           </div>
-          <p className="max-w-[500px] mt-2 mb-6">
+          <p className="lg:text-left text-center max-w-[500px] mt-2 mb-6">
             We know the value of money and hence we strive for quality courses
             at cheapest prices availabe. We also acknowledge that not everyone
             is willing to spend their money on such courses hence we try to
@@ -78,15 +78,15 @@ const LandingSections = (props: Props) => {
           </Link>
         </div>
       </section>
-      <section className="flex flex-row-reverse items-center justify-between">
-        <div className="relative h-[420px] w-[420px]">
+      <section className="flex flex-col lg:flex-row-reverse items-center justify-between">
+        <div className="relative h-[300px] w-[300px] sm:h-[420px] sm:w-[420px]">
           <Image src={hero8.src} alt="Hero section" fill />
         </div>
-        <div className="flex flex-col items-start">
-          <div className=" font-bold text-4xl">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="text-center lg:text-left font-bold text-3xl sm:text-4xl">
             <p>Join the community</p>
           </div>
-          <p className="max-w-[500px] mt-2 mb-6">
+          <p className="max-w-[500px] text-center lg:text-left mt-2 mb-6">
             Join various commmunities on Petcom where you can post for animals
             that are up for adoption, discuss over various topics, form your
             communities and engage with other like minded individuals to

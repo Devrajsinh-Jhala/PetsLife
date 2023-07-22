@@ -11,7 +11,7 @@ type Props = {
 const CoursePostComponent = ({ posts }: Props) => {
   return (
     <section className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 pb-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-y-16 pb-24">
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute
@@ -21,7 +21,7 @@ const CoursePostComponent = ({ posts }: Props) => {
             <div className="flex flex-col border border-secondary p-2 rounded-lg cursor-pointer group">
               <div className="relative w-full z-[-10] h-52 drop-shadow-xl ">
                 <Image
-                  className="object-contain   lg:object-center"
+                  className="object-cover  lg:object-center"
                   src={urlFor(post.mainImage).url()}
                   alt={post.title}
                   fill

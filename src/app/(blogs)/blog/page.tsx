@@ -20,7 +20,9 @@ const Blogs = async (props: Props) => {
   return (
     <section className="my-10 px-10">
       <div className="my-5">
-        <p className="text-4xl font-bold">Perfectly Curated blogs for you</p>
+        <p className="sm:text-4xl text-3xl font-bold">
+          Perfectly Curated blogs for you
+        </p>
         <p className="text-sm max-w-[750px] mt-2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis rem
           expedita voluptatibus hic ea enim. Quae fugit perferendis fuga

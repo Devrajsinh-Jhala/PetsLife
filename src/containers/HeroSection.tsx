@@ -8,12 +8,12 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <section className="my-10 flex items-center justify-between px-10 w-full">
-      <div className="flex flex-col items-start">
-        <div className=" font-bold text-4xl">
+    <section className="my-10 flex lg:flex-row flex-col-reverse items-center lg:justify-between justify-center px-10 w-full">
+      <div className="flex flex-col lg:items-start justify-center items-center">
+        <div className=" font-bold lg:text-left text-center text-3xl sm:text-4xl">
           <p>Welcome to Animal Haven!</p>
         </div>
-        <p className="max-w-[500px] mt-2 mb-6">
+        <p className="max-w-[500px] lg:text-left text-center mt-2 mb-6">
           One-stop destination for animal lovers. Explore our courses, delve
           into captivating blogs, and join our vibrant community. Expand your
           knowledge, connect with like-minded individuals, and make a positive
@@ -26,7 +26,7 @@ const HeroSection = (props: Props) => {
           </Button>
         </Link>
       </div>
-      <div className="relative h-[420px] w-[420px]">
+      <div className="relative w-[300px] h-[300px] sm:h-[420px] sm:w-[420px]">
         <Image priority fill src={heroImage.src} alt="Hero Image" />
       </div>
     </section>

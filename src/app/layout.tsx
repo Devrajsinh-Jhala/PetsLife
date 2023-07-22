@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +26,7 @@ export default function RootLayout({
             <div className="max-w-[1120px] selection:bg-[#eea727] scrollbar-hide w-screen h-screen overflow-x-hidden mx-auto">
               <Navbar />
               {children}
-              <Toaster />
+              {/* <Footer /> */}
             </div>
           </ThemeProvider>
         </body>
