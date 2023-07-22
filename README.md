@@ -6,11 +6,11 @@
 
 # Animal Haven
 
-An all round application built for pet lovers by a pet lover.
+An all round application built for pet lovers by a pet lover where users can share ideas, form communities and can learn a lot of stuff!
 
 ## Features
 
-- Magic Links
+- Magic Link Authentication
 - Google and Github Authentication
 - Content using Sanity
 - Light/dark mode toggle
