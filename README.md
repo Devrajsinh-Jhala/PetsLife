@@ -27,7 +27,7 @@ An all round application built for pet lovers by a pet lover where users can sha
 
 **Client:** Next.js 13, Shadcn UI, TailwindCSS, TypeScript
 
-**Server:** SanityCMS, TypeScript
+**Server:** SanityCMS, TypeScript, Prisma, PlanetScale
 
 **Authentication:** Clerk
 
